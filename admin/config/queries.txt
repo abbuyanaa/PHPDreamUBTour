@@ -1,0 +1,80 @@
+///////////////////////////////// Image /////////////////////////////////////////
+INSERT INTO `images`(`image`) VALUES ('')
+
+
+///////////////////////////////// User /////////////////////////////////////////
+SELECT * FROM `users` WHERE `email` = '' AND `password` = ''
+
+
+///////////////////////////////// Agent /////////////////////////////////////////
+SELECT a.id, a.profile, a.first_name, a.last_name, l.name AS lname FROM agents AS a 
+INNER JOIN `language` AS l ON l.id = a.lang_id 
+ORDER BY a.id DESC
+
+
+INSERT INTO `agents`(`first_name`, `last_name`, `email`, `profile`, `phone`, `lang_id`, `created_at`) VALUES ()
+
+SELECT * FROM `agents` WHERE `id`=''
+
+UPDATE `agents` SET `first_name`='', `last_name`='', `email`='', `profile`='', `phone`='', `lang_id`='' WHERE `id`=''
+
+DELETE FROM `agents` WHERE `id`=''
+
+
+///////////////////////////////// Bairshil /////////////////////////////////////////
+SELECT * FROM `bairshil` ORDER BY `id` DESC
+INSERT INTO `bairshil`(`name`) VALUES ('')
+UPDATE `bairshil` SET `name` = '' WHERE `id` = ''
+DELETE FROM `bairshil` WHERE `id` = ''
+SELECT * FROM `bairshil` ORDER BY `name` ASC
+
+
+
+///////////////////////////////// Category /////////////////////////////////////////
+SELECT * FROM `category` ORDER BY `id` DESC
+INSERT INTO `category`(`name`) VALUES ('')
+UPDATE `category` SET `name` = '' WHERE `id` = ''
+DELETE FROM `category` WHERE `id` = ''
+SELECT * FROM `category` ORDER BY `name` ASC
+
+
+
+///////////////////////////////// Category /////////////////////////////////////////
+UPDATE `social` SET `fb_url` = '', `twitter_url` = '', `instagram_url` = '', `youtube_url` = ''
+
+
+
+///////////////////////////////// Post /////////////////////////////////////////
+INSERT INTO `posts`(`title`, `body`, `price`, `bairshil_id`, `cat_id`, `lang_id`, `created_at`) VALUES ('', '', '', '', '', '', NOW())
+
+SELECT pmn.*, b.name AS bname, c.name AS cname FROM post_mn AS pmn 
+INNER JOIN bairshil AS b ON b.id = pmn.bairshil_id 
+INNER JOIN category AS c ON c.id = pmn.cat_id 
+ORDER BY pmn.id DESC
+
+SELECT * FROM `posts` WHERE `id` = ''
+
+UPDATE `posts` SET `title`='', `body`='', `price`='', `bairshil_id`='', `cat_id`='', `lang_id`='', `views`='' WHERE `id` = ''
+
+DELETE FROM `post_mn` WHERE `id` = ''
+
+
+///////////////////////////////// Post Images /////////////////////////////////////////
+INSERT INTO `postmn_images`(`post_id`, `images`) VALUES ('', '')
+SELECT * FROM `postmn_images` WHERE `post_id` = ''
+
+
+///////////////////////////////// News /////////////////////////////////////////
+SELECT n.id, n.title, n.body, n.views, l.name AS lname FROM news AS n 
+INNER JOIN `language` AS l ON l.id = n.lang_id 
+ORDER BY n.id DESC
+
+INSERT INTO `news`(`title`, `body`, `lang_id`, `created_at`) VALUES ('', '', '', NOW())
+SELECT * FROM `news` WHERE `id` = ''
+UPDATE `news` SET `title`='', `body`='', `lang_id`='' WHERE `id`=''
+DELETE FROM `news` WHERE `id` = ''
+
+
+///////////////////////////////// News /////////////////////////////////////////
+SELECT * FROM `about` WHERE `id` = ''
+UPDATE `about` SET `title` = '', `body` = '' WHERE `id`

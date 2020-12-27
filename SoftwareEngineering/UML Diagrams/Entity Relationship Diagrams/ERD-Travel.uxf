@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>552</x>
+      <y>396</y>
+      <w>216</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>images
+
+--
+-id PK
+--
+-image VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>24</x>
+      <y>24</y>
+      <w>216</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>users
+
+--
+-id PK
+--
+-email VARCHAR
+--
+-password VARCHAR
+--
+-phone INT
+--
+-address TEXT
+--
+-created_at DATETIME
+--
+-updated_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>816</x>
+      <y>24</y>
+      <w>216</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>news
+
+--
+-id PK
+--
+-title VARCHAR
+--
+-body VARCHAR
+--
+-views INT
+--
+-created_at DATETIME
+--
+-updated_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>288</x>
+      <y>24</y>
+      <w>216</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>posts
+
+--
+-id PK
+--
+-title VARCHAR
+--
+-body VARCHAR
+--
+-price INT
+--
+-bairshil_id FK
+--
+-cat_id FK
+--
+-lang_id FK
+--
+-views INT
+--
+-created_at VARCHAR
+--
+-updated_at ARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>552</x>
+      <y>24</y>
+      <w>216</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>agents
+
+--
+-id PK
+--
+-first_name VARCHAR
+--
+-last_name VARCHAR
+--
+-email VARCHAR
+--
+-profile VARCHAR
+--
+-phone int
+--
+-lang_id FK
+--
+-created_at DATETIME
+--
+-updated_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>24</x>
+      <y>396</y>
+      <w>216</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>social
+
+--
+-id
+--
+-fb_url VARCHAR
+--
+-twitter_url VARCHAR
+--
+-instagram_url VARCHAR
+--
+-youtube_url VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>288</x>
+      <y>396</y>
+      <w>216</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>about
+
+--
+-id PK
+--
+-title VARCHAR
+--
+-body TEXT
+--
+-lang_id FK
+--
+-created_at DATETIME
+--
+-updated_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>24</x>
+      <y>648</y>
+      <w>216</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>category
+
+--
+-id PK
+--
+-name VARCHAR
+--
+-created_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>288</x>
+      <y>648</y>
+      <w>216</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>bairshil
+
+--
+-id PK
+--
+-name VARCHAR
+--
+-created_at DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>552</x>
+      <y>648</y>
+      <w>204</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>language
+
+--
+-id PK
+--
+-name VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>816</x>
+      <y>264</y>
+      <w>216</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>hotel
+
+--
+-id PK
+--
+-name VARCHAR
+--
+-body TEXT
+--
+-link VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>816</x>
+      <y>456</y>
+      <w>204</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>gallery
+
+--
+-id PK
+--
+-name VARCHAR
+--
+-bairshil_id FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>816</x>
+      <y>648</y>
+      <w>204</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>mashin
+
+--
+-id PK
+--
+-name VARCHAR
+--
+-body TEXT</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
